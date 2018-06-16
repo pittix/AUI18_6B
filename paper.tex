@@ -5,22 +5,22 @@
 % copyright statement.
 
 % Copyright
-\CopyrightYear{2016}
-%\setcopyright{acmcopyright}
-\setcopyright{acmlicensed}
-%\setcopyright{rightsretained}
-%\setcopyright{usgov}
-%\setcopyright{usgovmixed}
-%\setcopyright{cagov}
-%\setcopyright{cagovmixed}
-% DOI
-\doi{http://dx.doi.org/10.475/123_4}
-% ISBN
-\isbn{123-4567-24-567/08/06}
-%Conference
-\conferenceinfo{CHI'16,}{May 07--12, 2016, San Jose, CA, USA}
-%Price
-\acmPrice{\$15.00}
+% \CopyrightYear{2016}
+% %\setcopyright{acmcopyright}
+% \setcopyright{acmlicensed}
+% %\setcopyright{rightsretained}
+% %\setcopyright{usgov}
+% %\setcopyright{usgovmixed}
+% %\setcopyright{cagov}
+% %\setcopyright{cagovmixed}
+% % DOI
+% \doi{http://dx.doi.org/10.475/123_4}
+% % ISBN
+% \isbn{123-4567-24-567/08/06}
+% %Conference
+% \conferenceinfo{CHI'16,}{May 07--12, 2016, San Jose, CA, USA}
+% %Price
+% \acmPrice{\$15.00}
 
 % Use this command to override the default ACM copyright statement
 % (e.g. for preprints).  Consult the conference website for the
@@ -53,6 +53,7 @@
 \usepackage{graphics}      % for EPS, load graphicx instead
 \usepackage[T1]{fontenc}   % for umlauts and other diaeresis
 \usepackage{txfonts}
+\usepackage[utf8]{inputenc}
 \usepackage{mathptmx}
 \usepackage[pdflang={en-US},pdftex]{hyperref}
 \usepackage{color}
@@ -131,9 +132,7 @@
 
 % End of preamble. Here it comes the document.
 \begin{document}
-
 \title{\plaintitle}
-
 \numberofauthors{3}
 \author{%
   \alignauthor{Leave Authors Anonymous\\
@@ -153,45 +152,120 @@
 \maketitle
 
 \begin{abstract}
-  UPDATED---\today. This sample paper describes the formatting
-  requirements for SIGCHI conference proceedings, and offers
-  recommendations on writing for the worldwide SIGCHI
-  readership. Please review this document even if you have submitted
-  to SIGCHI conferences before, as some format details have changed
-  relative to previous years. Abstracts should be about 150 words and
-  are required.
+  Smart Textiles and body worn controller (Wearables) have been analyzed, mostly individually, using different technologies and on different aspects. Although there were some tests concerning everyday life, they are not used very often in this situation life for several reasons. This paper aims to show some of them and analyze, instead, the opportunities that  may lead to a better development and improve the feeling that a user has when interacting in an uncommon way with a device. One of the main threats that this paper discuss will be the reasons for social unacceptability, methods to review social acceptability and possible solutions for the problems concerning the usage of Wearables in public minding also technology-related tradeoffs.
+  To illustrate the issues different Wearables are going to be presented - specifically concentrating on the social aspects of the devices. Finally this paper discusses further development of social acceptability of Wearables in the future.
 \end{abstract}
+% \category{H.5.m.}{Information Interfaces and Presentation
+%   (e.g. HCI)}{Miscellaneous} \category{See
+%   \url{http://acm.org/about/class/1998/} for the full list of ACM
+%   classifiers. This section is required.}{}{}
+%
+% \keywords{\plainkeywords}
+%
+% \section{Introduction} \label{test:intro}
+%
+% Here there's the intro.
+% \\ \textbf{Bold text} is done with
+% \begin{verbatim}
+%   \textbf{Bold text}
+% \end{verbatim}
+% \emph{emphatized text} is done with
+% \begin{verbatim}
+%   \emph{emphatized text}
+% \end{verbatim}
+% New line is made with double backslash
+% \begin{verbatim}
+%   line \\ another line
+% \end{verbatim}
+% \subsection{A subsection}
+% Text of the subsection is shown here.
+% \subsubsection{This is a subsubsection}
+% We should not go further in sub sectioning, so we shall not use \textit{paragraph} and \textit{subparagraph}
+% % References must be the same font size as other body text.
+\section{Introduction}
+Touch gestures are a form of interaction that is used by almost everyone daily in our society. Whether Smartphone, Tablet or Smartwatch - many mobile devices are nowadays controlled by this input technique to master different tasks. High demands are attached to the fast and intuitive use of these devices. The combination of different electronic devices can help to achieve these requirements in a new measure. For example, smart watches are already used to control mobile phones or various home electronics (e.g. controlling lamps). The development of innovative input devices, which can be integrated into clothing or even applied to the user's skin, offers the potential to communicate with electronic devices in completely new ways and make interaction even more intuitive. Especially we focus on touch input devices that are attached to the user's skin or are integrated into clothing and can be used to control different electronic devices.
 
-\category{H.5.m.}{Information Interfaces and Presentation
-  (e.g. HCI)}{Miscellaneous} \category{See
-  \url{http://acm.org/about/class/1998/} for the full list of ACM
-  classifiers. This section is required.}{}{}
+Because these technologies create new and unusual forms of interaction, we will also look on third-party perceptions of a user’s interactions with a wearable e-textile interface. Social conventions play an important role in the development of these new forms of interaction. The willingness to make gestures depends largely on how appropriate these actions look and feel in public. [Source: Don’t Mind me Touching my wrist] For example, interaction with a touch panel attached to the breast can be disgusting for some people. The usability of these technologies must also be considered. To support the user as efficiently, effectively and satisfactorily as possible, the designers must also consider the interaction with the system in addition to the placement of this body-worn controllers.
 
-\keywords{\plainkeywords}
 
-\section{Introduction} \label{test:intro}
+
+\section{Showcase of technology examples}
 
-Here there's the intro.
-\\ \textbf{Bold text} is done with
-\begin{verbatim}
-  \textbf{Bold text}
-\end{verbatim}
-\emph{emphatized text} is done with
-\begin{verbatim}
-  \emph{emphatized text}
-\end{verbatim}
-New line is made with double backslash
-\begin{verbatim}
-  line \\ another line
-\end{verbatim}
-\subsection{A subsection}
-Text of the subsection is shown here.
-\subsubsection{This is a subsubsection}
-We should not go further in sub sectioning, so we shall not use \textit{paragraph} and \textit{subparagraph}
-% References must be the same font size as other body text.
+Maybe first a definition of body-worn controllers and a not, that we want to concentrate on Touch-Input.
+I think it is a good idea to pick a few examples which were mentioned in the papers and discuss them briefly.
+For the first part (just the showcase) it is sufficient to just write down the basic technology (with Source): So what it is? How does is work (very briefly)? What it is used for?
+We can get more into detail in the pros/cons section below
+
+
+In order to get a rough overview of the interaction possibilities with Body-worn controller, different existing approaches are shown in this section.
+
+Augmented Reality related research is still trying to optimise the input, which interacts with the shown interface. This research area could potentially capitalize on the natural and unobtrusive ways you interact with Wearables.
+“Belt” (Source paper on belt) is an Body-worn controller specifically build to interact with Augmented Reality applications. As the name suggests the device is worn around the hip, like a regular belt. The device is touch-sensitive and can differentiate between simple gestures and locate the position of the touch-input (Source Page 2136). One of the main use cases of the device are spatial mapped shortcuts to open apps, like a virtual wallet for example.
+
+
+\section{Multi-Touch Skin: A thin and flexible Multi touch Sensor for On-Skin Input}
+% also true for iSkin
+A current approach deals with the placement of multi-touch sensors directly on the skin. Because the human body surface is differently curved and deformable, the system must be particularly flexible and adaptable to fit the skin. This is a special requirement for the design of the sensors as it needs to satisfy the comfort of the user wearing it, who should not feel the fact that he or she is wearing a sensor, and the necessity for the input to be fixed on a position of the body to recognize correctly the input, which requires tightness onto the skin. Furthermore, the human body has electrocapacitive effects, which must be correctly shielded from an input sensor to ensure reliable touch detection which places special demands on the technology's material: it must both be insulated by the conductive sweat produced by the skin, but it has to let the same sweat flow outside, to avoid the user to feel uncomfortable due to the impossibility of the the skin to dissipate the heat in that area.
+%The material, moreover, should be elastic like the skin is, to avoid the user to feel %tightened and for the sensor to lose the capability to detect the input if it’s not tight %enough at any time.
+To master these challenges, the researchers studied various materials and manufacturing processes. As a result of this research work, a multi-touch sensor was developed, which can be applied directly to the user's skin in form of a thin layer and thus adapts flexibly to the different body shapes. To counteract the capacitive properties of the human body, the prototype consists of three layers, the transmitting, receiving and shielding layer. The individual layers are produced using a standard printer. Silver ink was used here because silver is a particularly effective electrical conductor and so is perfectly qualified to produce the sensor units. Furthermore, this method is well suited to produce multi-touch sensors in different sizes and therefore to test them on different body regions.
+Possible uses are:
+A small multi-touch sensor behind the ear could be used to manipulate an audio device. For example, the user could adjust the volume by stroking the sensor or pause playback with a simple click. A wristband sized sensor could be used to control interactive lamps. Users could place two fingers around the wrist and rotate them to change the color of a light bulb or adjust the brightness of a lamp using swipe gestures.
+
+Another solution is presented by iSkin [ref], where a different material is used to allow input to be sensed. The polydimethylsiloxane (PDMS), the silicon-based material used, is “fully transparent, elastic, and a highly biocompatible material. [...] Therefore it is widely used on or in the human body, for example in body implants.” PDMS is non-conductive, but adding carbon to it lead to cPDMS, which can create a conductive surface. This allows to create gray sensible surfaces with specific drawn theme on it, which can immediately let the user know what to press for an action, but it doesn’t allow gestures to be performed on, as the principle on which it’s build is an RC charge-discharge time evaluation of the sensible surface.
+
+
+\section{e-Textiles}
+E-textiles are electronic input devices that are fitted or integrated into the user's clothing. These devices allow the user to interact with various electronic devices in his environment.
+
+An example for e-Textiles is “Pinstripe” a project by the University Aachen. This technology is directly integrated in clothing by conductive threads. The threads measure folds, which are created by pinching the fabric with thumb and index finger. When the fold is rolled across the fabric the rolling gesture accompanied by the diameter of the fold acts as an input (smaller folds represent finer inputs). Those inputs can be used for example to manipulate the volume of a music player.
+
+Another e-textile is the "Jogwheel", which was developed as part of the paper "Don't Mind Me Touching My Wrist: A Case Study of Interacting with On- Body Technology in Public" [X] to investigate the social acceptance of on-body technology. The jogwheel is visually comparable to a fabric patch and is made of conductive yarn. A tactile surface structure should guide the user's fingers, which simplifies eye-free interaction. The developers describe the size of the jogwheel as twice the size of the iPod click wheel. This size should allow high precision in use and several types of one-handed gestures. Figures N, M show the jog wheel and two ways of interaction with them. The e-Textil can be placed anywhere on the user's clothing for controlling electronic devices. [X]
+
+Another type of e-textile is the one presented by SmartSleeve [ref], where the fabric is an input surface made alternating conductive and insulating textile bands. Then another pressure-sensible fabric is set under the first one, beneath wich there’s another fabric alternating conductive and non-conductive bands  orthogonal to the top layer. This allows to touch and register both the position and the intensity with a matrix representation. The sensor density is 1.66 sensors per square inch, which allows for a discrete sensor density. However, as the system is working with the short-circuit principle and the wires are not insulated, skin moisture can lead to false position sensing. To avoid that, the authors have put SmartSleeve over a long-sleeved running shirt. This solution, though, becomes unsuitable in summer for obvious reasons. %maybe better written
+%
+Project Jaquard [ref], instead, expoits a capacitive system where the fabric is one layer textile where some of the wires in the weft and warp are electrical wires. As the touch sensing is made with capacitance measure, this system is not vulnerable to skin moist false sensing. Different materials have been investigated to create the electrical wires, both for simplicity over the creation of the fabric and the necessity of flexibility needed for comfort. The material chosen is the copper because it has similar properties of others fabrics like cotton, silk and wool when the wire diameter is 50µm.
+
+
+here we can add everything to e-Textiles
+
+
+At the end of this chapter we should discuss the advantages and disadvantages of the various technologies.
+
+
+
+\section{Social acceptability of touch-based Wearables}
+In this part we should discuss the issues with social acceptability
+first in general
+second regarding the specific devices we presented in the showcase
+When developing body-worn controllers, two things have to be considered. On the one hand the body part where this technology is placed - on the other, the design of the technology so that the system adapts as well as possible to the selected body part. These two parameters are a basic requirement for the most user-friendly system. [Source: Don't Mind me Touching my wrist]. However, another parameter is crucial and will be discussed in more detail in this section - social acceptability.
+
+Social acceptance includes the social competence and presentation in which people behave in such a way that they feel comfortable in society or do not embarrass themselves or draw attention to themselves. [13] (Source 13 of the paper Don't Mind me Touching my wrist -> SEARCH!). The use of portable technologies is therefore also subject to social conventions. The body-worn controllers listed in the previous sections are associated with new designs, new shapes and, above all, new interactions that might seem unfamiliar to third parties at first appearances.
+An example of this is the Bluetooth headset from the early 2000s. At first, there was less acceptance in society because it looked as if the user was talking to himself. After a while, however, the Bluetooth headset became established in society. [24] (Source 24 of the paper Don't Mind me Touching my wrist SEARCH!). The use of body-worn controllers could initially lead to similar effects and acceptance problems, for which reason possible application examples are presented below, evaluated and discussed with the aid of current studies.
+
+The perception of technology use in public spaces can be different in every culture, because the standards of social behaviour vary in many countries. [3] (Source: Dont mind me touching my wrist -> SEARCH). This also should be considered in the development of new interactive systems, which is why it also needs to be part of the research of social acceptance.  Campbell et al. have shown in their study on the public use of mobile phones, that there are indeed differences in this field. For example, Campbell et al. discovered that in Japan the use of mobile phones in buses or sidewalks is less accepted by society than in a restaurant. In many other cultures, this is rather the opposite. [Campbell, S. Perceptions of mobile phone use in public settings: a cross-cultural comparison. In Proc. of the Intl. Journal of Communication 1, (2007), 738-757.)]
+These results lead to the conclusion that there are also cultural differences in perception when interacting with body-worn controllers which need to be explored.
+
+Social acceptance includes various factors, which is why different methods are used to evaluate them. A handful of these methods will be mentioned and discussed in the next chapter.
+[X] = [Profita, H. P., Clawson, J., Gilliland, S., Zeagler, C., Starner, T., Budd, J., \& Do, E. Y. L.
+(2013, September). Don't mind me touching my wrist: a case study of interacting with on-body
+technology in public. In
+(pp. 89-96). ACM.]
+\section{Methods to review social acceptability}
+
+During my research I stumbled upon various methods to review the social acceptability of wearables (testing devices in public, testing devices in labs, testing with functional devices, testing with dummies, interviews which were more like a conversation, interviews with a simple likert scale (1..5) … the list goes on)
+We should discuss these techniques - what are advantages, disadvantages? What methods are practical / necessary?
+
+Since social acceptability is a major issue when it comes to the adaptation of new technology (Don’t mind my touching my wrist - page 90) there is also the need to measure it appropriately. Different researches have different approaches to review the social acceptability of their respective research.
+
+The paper "Don't Mind Me Touching My Wrist: A Case Study of Interacting with On-Body Technology in Public" deals with the social acceptability of on-body technology and examines which cultural differences of perception can arise during interaction with an e-textile. [x] The USA and South Korea were chosen as reference countries for this purpose. In order to investigate perception, the “Jogwheel” was used, which we have already discussed above. The use case was the control of a mobile phone, to be exact, muting it after an incoming call, during a four eye conversation in an elevator. The scenario was simulated twice in each of the two countries - once the interaction with the jogwheel was done by a woman and once by a man. This was recorded by camera and then presented to the participants in a survey.
+
+
+The main testing environment was the laboratory one, as it presents the optimal situation where on one side the subject is not distracted by other stimuli and it’s more focused on the topic he’s presented (in this case  gesture testing) and on the other side researchers can verify more data recorded by the sensor, receive voice feedback by testing subject, like what they’re doing, their mental model which explains why they’re doing this gesture, while they’re performing it. The first prototype shown is the Belt [ref], where users had a visual feedback for the belt-interaction, which was Google Glass. The main result, common to all interactions, is that the area reachable to the dominant hand is preferred. In the Belt case, in particular, the area which had a higher interaction density is the front of the belt, on the side of the dominant hand, where user expressed the easiness and comfortability of interacting with a body-worn device. The second case-study taken into account by this paper is the Pinstripe [ref] in which test subjects would perform gestures in three different context, which are sitting, standing still and walking, and  for each of them they’ll try to perform a grabbing gesture in all the sixteen areas of their body defined by the authors. For each of them they expressed the easiness and the personal acceptance of doing that gesture in that context. The most important discovery, found out also by the  papers [various ref] , is that the preferred part of the body is the upper side of the body, both for accessibility, which relates to easiness, and the comfort related to the social acceptance.
+Moreover, as shown by [ref MoreThanTouch, Assessing the wearability and related] the mind model related to the touchscreen UI influences mostly the types of gestures (i.e. pinch to zoom is transferred from the smartphone to the textile surface)
+
 \include{anotherSection}
 \bibliographystyle{SIGCHI-Reference-Format}
-% \bibliography{File.bib}
+ % \bibliography{File.bib}
 
 \end{document}
 
