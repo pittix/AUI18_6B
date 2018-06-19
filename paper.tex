@@ -251,8 +251,8 @@ Body-worn controllers offer innovative solutions to a host of problems, facilita
 Yet for all the innovative concepts developed with these technologies, they have not reached the level of ubiquity of their handheld smartphone counterparts.
 This is in part due to inherent size restrictions for the sake of user convenience. Controllers are designed to be worn in a fashion conforming to conventional accessories, usually situated on the upper body for manual access. Any unnecessary bulk is trimmed to not encumber the user, especially in the case of distally attached gadgets. This comes at the cost of display sizes, resulting in diminutive screens operated by basic button controls , which can be unintuitive, or touch input, which is made difficult by “fat-finger” issues with the limited size. Operating conventional graphical interfaces like the QWERTY keyboard on very small screens is not very practical: The input method requires precious screen space to display a touchscreen keyboard and precise positioning of the fingers tips to avoid input errors. \cite{vogel7} Research efforts are being made to remedy these problems by introducing more naturalistic and expressive user interfaces for existing hardware as well as methods to influence gesture recognition by improving the goodness of input. \cite{motion-ui, vogel7} %[10, 11]
 
-\section{E-textiles}
-Similar to body-worn controllers, e-textiles remain niche technologies despite the range of application possibilities. Just the field of pressure sensor textiles alone covers research fields that require high local resolutions, such as pressure-sore prevention, posture correction \cite{smart-rehabilitation} or motion detection due to muscular activity. \cite{vogel5}
+\section{E-Textiles}
+Similar to body-worn controllers, E-Textiles remain niche technologies despite the range of application possibilities. Just the field of pressure sensor textiles alone covers research fields that require high local resolutions, such as pressure-sore prevention, posture correction \cite{smart-rehabilitation} or motion detection due to muscular activity. \cite{vogel5}
 One reason for these shortcomings lies in the overall favorability of monolithic constructions of designs and prototypes. These designs grant more tightly integrated components, resulting in more robust systems. This consequently alleviates concerns about fault tolerance, paving the way for highly performant and scalable individual components with sensor densities of multiple points per cm² in sensor areas of several m².\cite{vogel4}  A preference for these  types of systems is owed to the fact that e-textiles, more specifically smart textiles, is a relatively new field of research. \cite{simpleskin} A large part of the work achieved still focuses on addressing customization to fit the bodies of potential users or optimization to obtain useful information from user interaction. \cite{smart-rehabilitation} This approach also leads to the pursuit of more focused goals towards single-purpose gadgets that work within the confines of the more extensively researched and tested monolithic systems. Medical prototypes have notably been able to detect and distinguish simultaneous muscle activity of separate muscle groups in the same limb and are projected to accurately register more complex compound muscle activity such as movements while breathing.[16] With a focus on stability and quality of electronic components comes at the cost of extensibility and the quality of textiles. The novelty of the field  leaving less room for modification and little appeal for such products beyond experimentation, special use and utility. \cite{simpleskin, vogel4} % [12, 13]
 
 \section{Social acceptability of touch-based Wearables}
@@ -312,6 +312,35 @@ The paper "Don't Mind Me Touching My Wrist: [...]"\cite{touch-wrist} deals with 
 \subsection{Interviews}
 
 When conducting a research based on interviews the first approach is often to offer the subjects a multiple choice style answer sheet. This technique yields a few very obvious advantages. The results are very comparable and the answers are always very clear. The interviews are also faster - so a larger number of subjects can be interviewed in less time. One major disadvantage is that the answers are always represented in thresholds. A participant might not feel that he “strongly agrees” with an aspect of the survey, but since there is often no other choice than “strongly agrees” and “somewhat agrees” he might feel inclined to still pick the first choice. Also the researching party only gets very limited feedback, since the participants often cannot their detailed opinion on the matter, because they are limited to the given questions and multiple choice answers. On the other hand there are survey techniques which try to structure the interview more like a loose conversation. This allows the subjects to express there detailed opinions and feelings on the survey matter. The disadvantages can be derived from the above mentioned advantages of multiple choice interviews. Briefly summarized the disadvantages are worse comparability, more time consuming interviews and the inability to give any or a very clear answer by the virtue of lacking options.
+\begin{table*}[t]
+\centering
+\caption{The table summarizes the different approach on testing the devices}
+\label{tab:testing}
+\begin{tabular}{lllll}
+\textbf{Lab testing }    & \textbf{Public testing}  & \textbf{Dummy test}                                                 & \textbf{Device test}     & \textbf{Demo video                      }                                           \\ \hline
+Belt            & Belt            & Belt                                                       & Belt            & \begin{tabular}[c]{@{}l@{}}Don't mind me \\ touching my wrist\end{tabular} \\
+Pinstripe       & Pinstripe       & \begin{tabular}[c]{@{}l@{}}Usable \\ gestures\end{tabular} & Pinstripe       & The social comfort                                                         \\
+Usable gestures & Usable gestures & \begin{tabular}[c]{@{}l@{}}More than touch\end{tabular}  & Usable gestures & Usable gestures                                                            \\
+More than touch &                 & SimpleSkin                                                 &                 &                                                                            \\
+SmartSleeve     &                 &                                                            &                 &
+\end{tabular}
+\end{table*}
+\begin{table*}[t] % add "*" to table to make it full width
+\centering
+\caption{This table summarizes the different approach paper used to retrieve user feedbacks}
+\label{tab:interview}
+\begin{tabular}{ll}
+\textbf{Multiple choiche interview}                   & \textbf{Conversation-style interview}                            \\ \hline
+Belt (likert)                       & Belt                                                    \\
+Don’t mind me (multiple choice)     & Don't mind me                                           \\
+Pinstripe (first study)                      & Pinstripe (second study)                                \\
+The Social Comfort                           & The Social Comfort                                      \\
+Usable Gestures (first study)                & Usable Gestures (second study)                          \\
+\begin{tabular}[c]{@{}l@{}}Enabling Mobile Interactions (focus on likert)\end{tabular} & More than touch                                         \\
+                                             & SmartSleeve                                             \\
+                                             & \begin{tabular}[c]{@{}l@{}}Enabling Mobile Interactions (focus on gesture creation)\end{tabular}
+\end{tabular}
+\end{table*}
 
 \subsection{Conclusion on methods}
 When comparing the different methods of testing Wearables, especially concerning the social acceptability there is no cleary preferred method. There is a small trend to testing with dummies (not working technology) rather than testing with working devices or prototypes. Furthermore testing in controlled environments (private settings - like a laboratory) are slightly more common than testing technology in public situations. Both of these trends seem reasonable. Testing with working prototypes needs more refined production to allow robust testing and public spaces are harder to control and monitor than controlled settings. These methods for testing technology are inherently more time- and cost-consuming than the previously mentioned counterparts and might go beyond the space of some projects.
@@ -330,12 +359,18 @@ Result Don’t mind me \cite{touch-wrist}: The "jogwheel" mentioned above was us
 
 Overall, the results of this study show a gender effect in reference to the placement and interaction of an e-textile. Especially the waist (for men) and the chest (for women) revealed to be socially sensitive areas. In contrast, the body positions of forearm and wrist were rated very positively, which could also be due to existing technologies (wristwatches, e-straps).
 
-\paragraph{Result Pinstripe} \cite{pinstripe}: Focus on location - since the input method is inherently unobtrusive the input was not seen as problematic outside of suggestive regions (body map). Preferred regions: Pockets, not dominant arm.
+\subsection{Result}
+\subsubsection{ Pinstripe} Focus on location - since the input method is inherently unobtrusive the input was not seen as problematic outside of suggestive regions (body map). Preferred regions: Pockets, not dominant arm.
 
-\paragraph{Usable Gestures} \cite{usable-gesture}: Many reasons for social acceptability (location, observer (amount, acquaintance), type of gesture, position of wearable, type of wearable, etc.), in general natural gestures will always be more socially acceptable. Repetition can affirme user.
+\subsubsection{Usable Gestures}
+Many reasons for social acceptability (location, observer (amount, acquaintance), type of gesture, position of wearable, type of wearable, etc.), in general natural gestures will always be more socially acceptable. Repetition can affirme user.
 
-\paragraph{The Social Comfort} \cite{social-comfort}: When it comes to the placement of wearables there is a strong aversion to inappropriate body locations. While preferred positions are mainly chosen because easy accessibility, positions are mainly eluded to avoid embarrassment. Also the visual properties of a Wearable are an key factor for acceptance.
-
+\subsubsection{The Social Comfort} When it comes to the placement of wearables there is a strong aversion to inappropriate body locations. While preferred positions are mainly chosen because easy accessibility, positions are mainly eluded to avoid embarrassment. Also the visual properties of a Wearable are an key factor for acceptance.
+ \begin{figure*}[t]
+   \includegraphics[width=\textwidth]{body-areas.png}
+   \caption{The green regions are more accepted by the user, whereas the red ones are considered socially unacceptable to be touched in public}
+   \label{fig:body}
+ \end{figure*}
 
 % \include{anotherSection}
 \bibliographystyle{SIGCHI-Reference-Format}
