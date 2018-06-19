@@ -194,14 +194,13 @@ Because these technologies create new and unusual forms of interaction, we will 
 
 
 \section{Showcase of technology examples}
+%
+% Maybe first a definition of body-worn controllers and a not, that we want to concentrate on Touch-Input.
+% I think it is a good idea to pick a few examples which were mentioned in the papers and discuss them briefly.
+% For the first part (just the showcase) it is sufficient to just write down the basic technology (with Source): So what it is? How does is work (very briefly)? What it is used for?
+% We can get more into detail in the pros/cons section below
 
-Maybe first a definition of body-worn controllers and a not, that we want to concentrate on Touch-Input.
-I think it is a good idea to pick a few examples which were mentioned in the papers and discuss them briefly.
-For the first part (just the showcase) it is sufficient to just write down the basic technology (with Source): So what it is? How does is work (very briefly)? What it is used for?
-We can get more into detail in the pros/cons section below
-
-
-In order to get a rough overview of the interaction possibilities with Body-worn controller, different existing approaches are shown in this section.
+In this paper we will analyze some body worn controllers, input sources made joining small electronical devices with everyday worn clothing. This allows to have bigger controlling surfaces ready to be used without  needing to take out the main device. Moreover, these controllers allows to express some inputs like many users would do in the social interactions, allowing to express emotions while acting the input gesture. This is enabled because the input surface is linked also to the skin, which is a direct input for the user. An example made in More Than Touch [ref] is “Uncomfortable interactions were chosen for actions that are very important and not reversible”, which shows how the gesture chosen to perform an action were related to the consequence that this action may lead to. In order to get a rough overview of the interaction possibilities with Body-worn controller, different existing approaches are shown in this section.
 
 Augmented Reality related research is still trying to optimise the input, which interacts with the shown interface. This research area could potentially capitalize on the natural and unobtrusive ways you interact with Wearables.
 “Belt” (Source paper on belt) is an Body-worn controller specifically build to interact with Augmented Reality applications. As the name suggests the device is worn around the hip, like a regular belt. The device is touch-sensitive and can differentiate between simple gestures and locate the position of the touch-input (Source Page 2136). One of the main use cases of the device are spatial mapped shortcuts to open apps, like a virtual wallet for example.
@@ -213,18 +212,16 @@ A current approach deals with the placement of multi-touch sensors directly on t
 To master these challenges, the researchers studied various materials and manufacturing processes. As a result of this research work, a multi-touch sensor was developed, which can be applied directly to the user's skin in form of a thin layer and thus adapts flexibly to the different body shapes. To counteract the capacitive properties of the human body, the prototype consists of three layers, the transmitting, receiving and shielding layer. The individual layers are produced using a standard printer. Silver ink was used here because silver is a particularly effective electrical conductor and so is perfectly qualified to produce the sensor units. Furthermore, this method is well suited to produce multi-touch sensors in different sizes and therefore to test them on different body regions.
 Possible uses are:
 A small multi-touch sensor behind the ear could be used to manipulate an audio device. For example, the user could adjust the volume by stroking the sensor or pause playback with a simple click. A wristband sized sensor could be used to control interactive lamps. Users could place two fingers around the wrist and rotate them to change the color of a light bulb or adjust the brightness of a lamp using swipe gestures.
-
 Another solution is presented by iSkin [ref], where a different material is used to allow input to be sensed. The polydimethylsiloxane (PDMS), the silicon-based material used, is “fully transparent, elastic, and a highly biocompatible material. [...] Therefore it is widely used on or in the human body, for example in body implants.” PDMS is non-conductive, but adding carbon to it lead to cPDMS, which can create a conductive surface. This allows to create gray sensible surfaces with specific drawn theme on it, which can immediately let the user know what to press for an action, but it doesn’t allow gestures to be performed on, as the principle on which it’s build is an RC charge-discharge time evaluation of the sensible surface.
 
 \section{e-Textiles}
 E-textiles, the contraction of electronic textiles, are input devices fitted or integrated into the fabric of a user's clothing. These surfaces allow the user to interact with various electronic devices in his environment, as they integrates both the sensing surface, which takes the physical input like touch, grab or fingering,  and a control unit, which elaborate the input and send it to a controlled device. This means that usually an e-textile is only an input surface, which implies the necessity for the surface itself not to be rigid in order to let the skin act as a direct feedback for the user.
 
 An example for e-Textiles is “Pinstripe” a project by the University Aachen. This technology is directly integrated in clothing by conductive threads. The threads measure folds, which are created by pinching the fabric with thumb and index finger. When the fold is rolled across the fabric the rolling gesture accompanied by the diameter of the fold acts as an input (smaller folds represent finer inputs). Those inputs can be used for example to manipulate the volume of a music player.
-
 Another e-textile is the "Jogwheel", which was developed as part of the paper "Don't Mind Me Touching My Wrist: A Case Study of Interacting with On- Body Technology in Public" [X] to investigate the social acceptance of on-body technology. The jogwheel is visually comparable to a fabric patch and is made of conductive yarn. A tactile surface structure should guide the user's fingers, which simplifies eye-free interaction. The developers describe the size of the jogwheel as twice the size of the iPod click wheel. This size should allow high precision in use and several types of one-handed gestures. Figures N, M show the jog wheel and two ways of interaction with them. The e-Textil can be placed anywhere on the user's clothing for controlling electronic devices. [X]
 \begin{figure}
   \includegraphics[width=\columnwidth]{jogwheel.png}
-  \caption{\emph{Jogwheel} sensing surface textile}
+  \caption{\emph{Jogwheel} sensing surface textile in Don't mind me touching your wrist}
 \end{figure}
 %
 %
@@ -256,7 +253,7 @@ Social acceptance includes various factors, which is why different methods are u
 (2013, September). Don't mind me touching my wrist: a case study of interacting with on-body
 technology in public. In
 (pp. 89-96). ACM.]
-Methods to review social acceptability
+\subsection{Methods to review social acceptability}
 %
 % During my research I stumbled upon various methods to review the social acceptability of wearables (testing devices in public, testing devices in labs, testing with functional devices, testing with dummies, interviews which were more like a conversation, interviews with a simple likert scale (1..5) … the list goes on)
 % We should discuss these techniques - what are advantages, disadvantages? What methods are practical / necessary?
@@ -300,7 +297,7 @@ Belt, Don’t mind me, Pinstripe (2. study), The Social Comfort, Usable Gestures
 
 \include{anotherSection}
 \bibliographystyle{SIGCHI-Reference-Format}
- % \bibliography{File.bib}
+\bibliography{biblio.bib}
 
 \end{document}
 
