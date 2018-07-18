@@ -1,13 +1,23 @@
 \documentclass{sigchi}
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL paper.tex             Tue Jul 17 17:27:51 2018
+%DIF ADD paper_corrected.tex   Wed Jul 18 21:29:51 2018
 
 % Use this section to set the ACM copyright statement (e.g. for
 % preprints).  Consult the conference website for the camera-ready
 % copyright statement.
 
-%%Copyright
-% \CopyrightYear{2018}
-%% \setcopyright{acmcopyright}
-% \setcopyright{acmlicensed}
+%DIF 7-10c7-10
+%DIF < %%Copyright
+%DIF < % \CopyrightYear{2018}
+%DIF < %% \setcopyright{acmcopyright}
+%DIF < % \setcopyright{acmlicensed}
+%DIF -------
+%Copyright %DIF > 
+\CopyrightYear{2018} %DIF > 
+% \setcopyright{acmcopyright} %DIF > 
+\setcopyright{acmlicensed} %DIF > 
+%DIF -------
 %\setcopyright{rightsretained}
 %\setcopyright{usgov}
 %\setcopyright{usgovmixed}
@@ -134,6 +144,70 @@
 % \newcommand\tabhead[1]{\small\textbf{#1}}
 
 % End of preamble. Here it comes the document.
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFaddtex}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdeltex}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF HYPERREF PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{\texorpdfstring{\DIFaddtex{#1}}{#1}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{\texorpdfstring{\DIFdeltex{#1}}{}} %DIF PREAMBLE
+\newcommand{\DIFscaledelfig}{0.5}
+%DIF HIGHLIGHTGRAPHICS PREAMBLE %DIF PREAMBLE
+\RequirePackage{settobox} %DIF PREAMBLE
+\RequirePackage{letltxmacro} %DIF PREAMBLE
+\newsavebox{\DIFdelgraphicsbox} %DIF PREAMBLE
+\newlength{\DIFdelgraphicswidth} %DIF PREAMBLE
+\newlength{\DIFdelgraphicsheight} %DIF PREAMBLE
+% store original definition of \includegraphics %DIF PREAMBLE
+\LetLtxMacro{\DIFOincludegraphics}{\includegraphics} %DIF PREAMBLE
+\newcommand{\DIFaddincludegraphics}[2][]{{\color{blue}\fbox{\DIFOincludegraphics[#1]{#2}}}} %DIF PREAMBLE
+\newcommand{\DIFdelincludegraphics}[2][]{% %DIF PREAMBLE
+\sbox{\DIFdelgraphicsbox}{\DIFOincludegraphics[#1]{#2}}% %DIF PREAMBLE
+\settoboxwidth{\DIFdelgraphicswidth}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\settoboxtotalheight{\DIFdelgraphicsheight}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\scalebox{\DIFscaledelfig}{% %DIF PREAMBLE
+\parbox[b]{\DIFdelgraphicswidth}{\usebox{\DIFdelgraphicsbox}\\[-\baselineskip] \rule{\DIFdelgraphicswidth}{0em}}\llap{\resizebox{\DIFdelgraphicswidth}{\DIFdelgraphicsheight}{% %DIF PREAMBLE
+\setlength{\unitlength}{\DIFdelgraphicswidth}% %DIF PREAMBLE
+\begin{picture}(1,1)% %DIF PREAMBLE
+\thicklines\linethickness{2pt} %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\framebox(1,1){}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\line( 1,1){1}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,1){\line(1,-1){1}}}% %DIF PREAMBLE
+\end{picture}% %DIF PREAMBLE
+}\hspace*{3pt}}} %DIF PREAMBLE
+} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbegin}{\DIFaddbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddend}{\DIFaddend} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbegin}{\DIFdelbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelend}{\DIFdelend} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbegin}{\DIFOaddbegin \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbegin}{\DIFOdelbegin \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbeginFL}{\DIFaddbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddendFL}{\DIFaddendFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbeginFL}{\DIFdelbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelendFL}{\DIFdelendFL} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbeginFL}{\DIFOaddbeginFL \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbeginFL}{\DIFOdelbeginFL \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
 \begin{document}
 \title{\plaintitle}
 \numberofauthors{4}
@@ -159,7 +233,7 @@
 \maketitle
 
 \begin{abstract}
-  Smart Textiles and body worn controllers (Wearables) have been analyzed, mostly individually, using different technologies and studying different aspects. Although there were some tests concerning everyday life, these controllers are not used very often for several reasons. This paper aims to show some of them and analyze, instead, the opportunities that  may lead to better development and improve the feeling that a user has when interacting in an uncommon way with a device. One of the main threats to the adoption of Wearables that this paper will discuss will be the reasons for social unacceptability. Other topics will be the methods to review social acceptability and possible solutions to the problems concerning the usage of Wearables in public, taking into account the technology-related tradeoffs.
+  Smart Textiles and body worn controllers (Wearables) have been analyzed, mostly individually, using different technologies and studying different aspects. Although there were some tests concerning everyday life, these controllers are not used very often for several reasons. This paper aims to show some of \DIFdelbegin \DIFdel{them }\DIFdelend \DIFaddbegin \DIFadd{these reasons }\DIFaddend and analyze, instead, the opportunities that  may lead to better development and improve the feeling that a user has when interacting \DIFdelbegin \DIFdel{in an uncommon way }\DIFdelend with a device \DIFaddbegin \DIFadd{in a way that's not common along the rest of the population}\DIFaddend . One of the main threats to the adoption of Wearables that this paper will discuss will be the reasons for social unacceptability. Other topics will be the methods to review social acceptability and possible solutions to the problems concerning the usage of Wearables in public, taking into account the technology-related tradeoffs.
   To illustrate this issue, different Wearables are going to be presented - specifically concentrating on the social aspects of the devices. Finally, this paper discusses further development of social acceptability of Wearables in the future.
 \end{abstract}
 % \category{H.5.m.}{Information Interfaces and Presentation
@@ -194,9 +268,9 @@
 % quick overview over the topic. Philipp already mentioned that his abstract might be a good starting point.
 % Also we should give an introduction on the respective parts of the paper and give reason for the research we did (why is social acceptability an issue…)
 
-Touch gestures are a form of interaction that is used by almost everyone daily in our society. Whether Smartphone, Tablet, or Smartwatch - many mobile devices are nowadays controlled by this input technique to master different tasks. High demands are directly related to the fast and intuitive use of these devices. The combination of different electronic devices can help achieve these requirements to a higher extent. For example, smart watches are already used to control mobile phones or various home electronics (e.g. controlling lamps). The development of innovative input devices, which can be integrated into clothing or even applied to the user's skin, offers the potential to communicate with electronic devices in completely new ways and make interaction even more intuitive. In this paper, we especially focus on touch input devices that are attached to the user's skin or are integrated into clothing. This can be used to control different electronic devices.
+Touch gestures are a form of interaction that is used \DIFdelbegin \DIFdel{by almost everyone daily }\DIFdelend \DIFaddbegin \DIFadd{a lot }\DIFaddend in our society.\DIFaddbegin \footnote{\DIFadd{To date, just counting only Android and iOS devices, more than 3 billion devices are active monthly, https://www.apple.com/newsroom/2018/02/apple-reports-first-quarter-results/ and https://twitter.com/Google/status/864890655906070529}} \DIFaddend Whether Smartphone, Tablet, or Smartwatch - many mobile devices are nowadays controlled by this input technique to master different tasks. High demands are directly related to the fast and intuitive use of these devices. The combination of different electronic devices can help achieve these requirements to a higher extent. For example, smart watches are already used to control mobile phones or various home electronics (e.g. controlling lamps). The development of innovative input devices, which can be integrated into clothing or even applied to the user's skin, offers the potential to communicate with electronic devices in completely new ways and make interaction even more intuitive. In this paper, we especially focus on touch input devices that are attached to the user's skin or are integrated into clothing. This can be used to control different electronic devices.
 Because these technologies create new and unusual forms of interaction, we will also look at third-party perceptions of a user’s interactions with a wearable E-textile interface. Social conventions play an important role in the development of these new forms of interaction. The willingness to make a gesture depends largely on how appropriate these interactions look and feel in public. \cite{touch-wrist} The usability of these technologies must also be examined: to support the user as efficiently, effectively and satisfactorily as possible, the designers must consider the interaction with the system in addition to the placement of these body-worn controllers.
-
+
 \section{Showcase of technology examples}
 %
 % Maybe first a definition of body-worn controllers and a not, that we want to concentrate on Touch-Input.
@@ -243,7 +317,11 @@ Another type of E-textile is the one presented by SmartSleeve \cite{smart-sleeve
 Project Jaquard \cite{jacquard}, instead, utilizes a capacitive system where the fabric is one layer textile, in which some of the wires in the weft and warp are electrical wires. As the touch sensing is made with capacitance measure, this system is not vulnerable to errors due to the skin moisture. Different materials have been investigated to create the electrical wires, both for simplicity of the creation of the fabric and the necessity of flexibility needed for comfort. The material chosen was copper because it has similar properties to cotton, silk and wool when the wire diameter is 50µm.
 %
 % \subsection{SimpleSkin: Towards Multipurpose Smart Garments}
-The Simple Skin \cite{simpleskin} is an example of a modular smart textile garment, created for commercially viable multi-purpose garments. It combines multiple sensing modalities, namely capacitive sensing for head and wrist movement , resistive sensing for arm movement\cite{vogel4} and bio-impedance sensing for heart rate. This allows optional smartphone interaction. This placement is intended to detect the angles of the joints to analyse posture, monitor vital signs, and offer input on the socially accepted region of the lower arm with the wrist sensor. Finally, the smartphone grants the options of a regular input device or a supportive device to supply the user with  information. This modular design allows for the separation of various components such as sensing, acquisition hardware, processing, and software. This allows the use of various combinations of different technologies on the same garment, and enables modifications of the underlying fabric with detachable hardware. \cite{simpleskin}
+The Simple Skin \cite{simpleskin} is an example of a modular smart textile garment, created for commercially viable multi-purpose garments. It combines multiple sensing modalities, namely capacitive sensing for head and wrist movement , resistive sensing for arm movement
+\DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\cite{vogel4} }\hspace{0pt}%DIFAUXCMD
+}\DIFdelend %DIF >  \cite{vogel4} #TODO
+and bio-impedance sensing for heart rate. This allows optional smartphone interaction. This placement is intended to detect the angles of the joints to analyse posture, monitor vital signs, and offer input on the socially accepted region of the lower arm with the wrist sensor. Finally, the smartphone grants the options of a regular input device or a supportive device to supply the user with  information. This modular design allows for the separation of various components such as sensing, acquisition hardware, processing, and software. This allows the use of various combinations of different technologies on the same garment, and enables modifications of the underlying fabric with detachable hardware. \cite{simpleskin}
 
 \section{Advantages and disadvantages of body-worn controllers}
 Body-worn controllers offer innovative solutions to a host of problems, facilitated by a combination of progressive miniaturization and sophistication of electrical components. Recent miniature controllers in the form of smartwatches and wristbands can complement larger devices by supplying information or act as more limited but less power-consuming alternatives. \cite{motion-ui} Although Smartphones are undoubtedly the most ubiquitous form of small computing devices, improvements can be made: Mobile phones are large enough to offer extensive functionality and services, but their use can be distracting due to the length of interactions, or even objectionable, in certain social settings. Phones are usually kept out of sight, retrieved when needed, then returned to their container or receptacle in order to conform to social etiquette. They also demand more concentration from the user, preventing effective use while moving or attempting to execute other tasks that require coordination. Smaller body-worn devices, in the form of wrist-worn contraptions, can be worn in an unremarkable and acceptable manner and remove the need for retrieval and concealment for their use. The design of new interfaces for these body-worn devices also allows for the development of more concise interaction, reducing the time needed to return to the previous task without interruption, and creating a ``micro-interaction'' cycle.\footnote{Microinteractions: interactions with a device that take less than four seconds to initiate and complete.} \cite{microinteraction}
@@ -264,7 +342,9 @@ When developing body-worn controllers, two things have to be considered: which b
 Social acceptance includes the social competence and presentation in which people behave in such a way that they feel comfortable in society or do not embarrass themselves or draw attention to themselves. \cite{self-everyday} The use of portable technologies is therefore also subject to social conventions. The body-worn controllers listed in the previous sections are associated with new designs, new shapes and, above all, new interactions that might seem unfamiliar to third parties at first glance.
 An example of this is the Bluetooth headset from the early 2000s. At first, there was less acceptance in society because it looked as if the users were talking to themselves. After a while, however, the Bluetooth headset became established in society. \cite{usable-gesture} The use of body-worn controllers could initially lead to similar effects and acceptance problems, for which reason possible application examples are presented below, evaluated and discussed with the aid of current studies.
 
-The perception of technology use in public spaces can be different in every culture, because the standards of social behaviour vary in many countries. This also should be considered in the development of new interactive systems, which is why it also needs to be part of the research of social acceptance. Campbell et al. have shown in their study on the public use of mobile phones, that there are indeed differences in this field. For example, Campbell et al. discovered that in Japan the use of mobile phones in buses or sidewalks is less accepted by society than in a restaurant. In many other cultures, this is rather the opposite. \cite{mobile-phones} These results lead to the conclusion that there are also cultural differences in perception when interacting with body-worn controllers which need to be explored.
+The perception of technology use in public spaces can be different in every culture, because the standards of social behaviour vary in many countries. This also should be considered in the development of new interactive systems, which is why it also needs to be part of the research of social acceptance. Campbell et al. \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\cite{mobile-phones} }\hspace{0pt}%DIFAUXCMD
+}\DIFaddend have shown in their study on the public use of mobile phones, that there are indeed differences in this field. For example, \DIFdelbegin \DIFdel{Campbell et al. }\DIFdelend \DIFaddbegin \DIFadd{the same paper just quoted, }\DIFaddend discovered that in Japan the use of mobile phones in buses or sidewalks is less accepted by society than in a restaurant. In many other cultures, this is rather the opposite. \cite{mobile-phones} These results lead to the conclusion that there are also cultural differences in perception when interacting with body-worn controllers which need to be explored.
 
 Social acceptance includes various factors, which is why different methods are used to evaluate them. A handful of these methods will be mentioned and discussed in the next section.
 
@@ -344,12 +424,16 @@ It is also notable that yet again in most cases both techniques were combined. A
 
 \subsection{State of social acceptability of wearables}
 ``...as basic needs are met, attention shifts to higher-order needs. In the case of wearable technologies, the field has matured to the point where basic needs like physical comfort, accessibility, and usability are met, higher-order needs for social acceptance and self-actualization become increasingly imperative.’’ \cite[p. 4162]{social-comfort} %(\cite{social-comfort} page 4162)
-This quote underlines the current challenge Wearables have to face to succeed in the long term. Since as mentioned by Dunne, Lucy E., et al. the basic needs are figured out for Wearables they now have to please higher needs - such as social acceptability. To illuminate the current state some results of current researches are presented here.
+This quote underlines the current challenge Wearables have to face to succeed in the long term. Since as mentioned by Dunne, Lucy E., et al. \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\cite{social-comfort} }\hspace{0pt}%DIFAUXCMD
+}\DIFaddend the basic needs are figured out for Wearables they now have to please higher needs - such as social acceptability. To illuminate the current state some results of current researches are presented here.
 
 
 Result “Belt” \cite{belt} : Dobbelstein et al. came to two main conclusions regarding the social acceptability of the tested device - Belt. The first observation was that short interactions were perceived more acceptable by the survey participants. The time was especially relevant when it came to interacting with unusual body regions. The second observation was that natural interactions are more acceptable in general. For example the region above the back pocket was deemed more inconvenient than others. But for the opening of a virtual wallet this area was the preferred region. Because this is the area where usually a tangible wallet is located.
 
-Result “Don’t Mind me Touching my Wrist” \cite{touch-wrist}: The "Jogwheel" \cite{touch-wrist} mentioned above was used in an online survey to evaluate the social acceptance of an E-textile interface by showing a demo video to the participants. The results showed gender and cultural differences in this field. There were large gender-specific differences, especially in body placement. For example, while the placement of the interface on a man's chest looked very accessible and natural to the participants, the same part of a woman's body was perceived as “disgusting”. \cite{touch-wrist} The participants from the USA found the interaction with the interface at the waist by a man more embarrassing than by a woman. The answers of the South Koreans were exactly reversed here, which indicates to cultural differences. \cite{touch-wrist}
+Result “Don’t Mind me Touching my Wrist” \cite{touch-wrist}: The "Jogwheel"  \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\cite{touch-wrist} }\hspace{0pt}%DIFAUXCMD
+}\DIFdelend mentioned above was used in an online survey to evaluate the social acceptance of an E-textile interface by showing a demo video to the participants. The results showed gender and cultural differences in this field. There were large gender-specific differences, especially in body placement. For example, while the placement of the interface on a man's chest looked very accessible and natural to the participants, the same part of a woman's body was perceived as “disgusting”. \cite{touch-wrist} The participants from the USA found the interaction with the interface at the waist by a man more embarrassing than by a woman. The answers of the South Koreans were exactly reversed here, which indicates to cultural differences. \cite{touch-wrist}
 
 Overall, the results of this study show a gender effect in reference to the placement and interaction of an E-textile. Especially the waist (for men) and the chest (for women) revealed to be socially sensitive areas. In contrast, the body positions of forearm and wrist were rated very positively, which could also be due to existing technologies (wristwatches, e-straps).
 
@@ -367,7 +451,7 @@ Result “Social Comfort of Wearable Technology” \cite{social-comfort} : When 
 \end{figure*}
 
 \subsection{Evaluation of placement areas for body-worn controllers }
-The single most prominent factor mentioned in the respective research projects, besides the type of gesture, was the body region where the Wearable was placed. The figure above shows the preferred regions in the individual studies. When comparing the researches there are two main observations to be made. First there is a strict aversion against socially suggestive regions for Wearables. These regions include genitalia, the bottom and, especially when asking female subjects, the upper torso area, including the sternum and collarbone.
+The single most prominent factor mentioned in the respective research projects, besides the type of gesture, was the body region where the Wearable was placed. The figure \DIFdelbegin \DIFdel{above }\DIFdelend \DIFaddbegin \DIFadd{\ref{fig:body} }\DIFaddend shows the preferred regions in the individual studies. When comparing the researches there are two main observations to be made. First there is a strict aversion against socially suggestive regions for Wearables. These regions include genitalia, the bottom and, especially when asking female subjects, the upper torso area, including the sternum and collarbone.
 Second the all around preferred area for Wearable seems to be the forearm and wrist region - especially of the non dominant hand. \cite{touch-wrist,pinstripe,social-comfort,belt} %[1,6,7,8]
 This may be due to the fact that interaction with technologies on these body regions is already established and accepted in society through other devices such as watches and fitness bracelets. However, these body regions are also easy to reach and offer sufficient space for various gestures, which makes these body regions very suitable for body-worn controllers in the future as well.
 \section{Outlook on social acceptability of wearables in the future}
@@ -375,7 +459,7 @@ When looking into the future of Wearables one of the most interesting parts is t
 One, if not the most, important part of social acceptability are the performed gestures. Currently there is always a tradeoff which needs to be balanced when designing gestures, which are meant to be used in public situations. On one hand natural gestures are inherently more unobtrusive and socially acceptable. On the other hand these gestures are far more difficult to track and evaluate precisely, since they are easily confusable with everyday gestures that were not meant to be an input \cite{social-comfort}.
 One approach to solve this problem is improving on better technology and tracking to avoid both confusing inputs and social discomfort at the same time. Another approach could be focussed around the social vocabulary more than around the gestures themselves.
 ``Because there does not currently exist a standard `vocabulary’ of gesture, it is correspondingly more difficult for viewers to match a perceived gesture with a previously-understood meaning.'' \cite[p. 4160]{social-comfort} %page 4160
-Looking at this quote the other solution seems obvious. With the further adaptation of a novel technology there comes a better understanding of the gestures and finally a new social vocabulary regarding it. There were similar developments when the bluetooth headset \cite{social-comfort} or the Sony Walkman \cite{touch-wrist} was established.
+Looking at this quote the other solution seems obvious. With the further adaptation of a novel technology there comes a better understanding of the gestures and finally a new social vocabulary regarding it. There were similar developments when the bluetooth headset \cite{social-comfort} or the Sony Walkman \cite{touch-wrist} \DIFdelbegin \DIFdel{was }\DIFdelend \DIFaddbegin \DIFadd{were }\DIFaddend established.
 In conclusion, the social acceptance of body-worn controllers can be increased through further developments and by bringing them more and more in contact with the public.
 
 % \include{anotherSection}
